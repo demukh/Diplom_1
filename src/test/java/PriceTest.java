@@ -21,7 +21,7 @@ public class PriceTest {
         this.ingredientPrice = ingredientPrice;
         this.expectedPrice = expectedPrice;
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2}")
     public static Object[][] getBurgerData() {
         return new Object[][]{
                 {0, 0, 0},
